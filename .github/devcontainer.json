@@ -1,8 +1,6 @@
 {
   "name": "Python Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,5 +10,5 @@
     }
   },
   "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
-  "runArgs": ["-p", "3000:3000"]
+  "runArgs": ["-p", "8000:8000"]
 }
